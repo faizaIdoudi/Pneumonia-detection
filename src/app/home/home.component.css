@@ -1,0 +1,68 @@
+/* Make the image cover the entire interface */
+.homepage {
+    background-image: url('../../assets/images/back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Slight background transparency for readability */
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Center the content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    text-align: center;
+}
+
+.content h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background for readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content img {
+    display: none; /* Hide the image inside content as the background image covers the interface */
+}
+
+/* Optional: Add media query for better responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 18px;
+    }
+    .content h2 {
+        font-size: 32px;
+    }
+}
